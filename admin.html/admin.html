@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-3">
+        <h1>Burger Shop Menu</h1>
+    </header>
+    <div class="container mt-4">
+        <div id="menupage" class="d-flex flex-wrap gap-4"></div>
+
+        <h2 class="mt-5">Order Summary</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Discount (%)</th>
+                    <th> qty</th>
+                    <th>Price ($)</th>
+                    <th>Remove item</th>
+                    <th>updatae Item</th>
+                </tr>
+            </thead>
+            <tbody id="orderSummary"></tbody>
+        </table>
+    </div>
+
+    <div>
+        <table id="orderSummary">
+        
+        </table>
+        <h3 id="totalPrice">Total: $0.00</h3>
+        
+    </div>
+       
+        
+
+       
+
+
+
+    <script src="update.js"></script>
+</body>
+</html>

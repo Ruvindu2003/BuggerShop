@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(45deg, #ff6b6b, #f7a8b8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #fff;
+}
+h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+input[type="text"], input[type="password"] {
+    width: 300px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 1.1em;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #ff6b6b;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+input[type="button"] {
+    width: 300px;
+    padding: 15px;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+
+input[type="button"]:hover {
+    background-color: #ff4757;
+}
+
+
+input[type="button"]:active {
+    background-color: #e74c3c;
+}
+
+
+input[type="button"]:focus {
+    outline: none;
+}
+
+input {
+    margin-bottom: 10px;
+}
+

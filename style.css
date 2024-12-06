@@ -1,0 +1,175 @@
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; 
+    margin: 0;
+    padding: 0;
+    background-image: url(images/buuger1.png.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth; 
+    color: #333;
+}
+
+
+.navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f8c146 !important; 
+    text-transform: uppercase; 
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    border: 3px solid #f8c146; 
+}
+
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff !important; 
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+}
+
+.nav-link:hover {
+    color: #f8c146 !important; 
+    text-decoration: underline; 
+    transform: translateY(-3px); 
+}
+
+
+.navbar-nav .dropdown-menu {
+    background-color: #343a40; 
+    border: none;
+}
+
+.dropdown-item {
+    color: #f8f9fa !important; 
+}
+
+.dropdown-item:hover {
+    background-color: orange; 
+    transform: translateX(5px); 
+}
+
+
+.nav-item.rounded-pill .nav-link {
+    border: 2px solid transparent;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.nav-item.rounded-pill .nav-link:hover {
+    border-color: #f8c146; 
+    transform: scale(1.1); 
+}
+
+
+#manage-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff; 
+    color: #333;
+    border-top: 3px solid #f8c146; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#manage-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f8c146; /* Gold color for titles */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Shadow for text depth */
+}
+
+#manage-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #d61414;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f8c146;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* 3D Effect on Header */
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: transparent;
+    background: linear-gradient(to right, #f8c146, #ff7e00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    transform: perspective(500px) rotateX(5deg);
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    color: #fff;
+    text-shadow: 4px 4px 20px rgba(255, 215, 0, 0.8);
+    transform: perspective(500px) rotateX(0deg) scale(1.05);
+}
+
+.bg-manual-setup {
+    background-image: linear-gradient(to right, red, black); 
+}
+
+
+.chart-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+button {
+    padding: 12px 20px;
+    background-color: #f8c146;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f28f19; 
+    transform: translateY(-5px) scale(1.1); 
+}
+
+button:active {
+    transform: translateY(2px) scale(1); 
+}
