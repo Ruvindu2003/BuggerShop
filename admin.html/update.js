@@ -151,7 +151,6 @@ function saveOrder() {
     
 
     console.log(orders);
-    console.log(orderItems);
     
     
 
@@ -161,7 +160,7 @@ function saveOrder() {
     }
 
     console.log(`Order saved for customer: ${customerName}`);
-    console.log('Order details:', orderItems);
+    console.log('Order details:', orders.items);
 
     localStorage.removeItem('orders');
     orderItems = [];
