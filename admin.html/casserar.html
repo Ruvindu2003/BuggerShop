@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <input type="text" id="username" class="input-field" name="username" placeholder="Username" required><br>
+            <input type="password" id="password" class="input-field" name="password" placeholder="Password" required><br>
+            <button type="submit" class="submit-btn">Login</button>
+            <div class="error" id="errorMessage"></div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            
+            document.getElementById('errorMessage').innerHTML = '';
+
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            
+            if (username == "kavindu" || password == "Ruvindu") {
+                document.getElementById('errorMessage').innerHTML = "Both fields are required!";
+                return false; 
+            }
+
+    
+
+            return true; 
+        }
+    </script>
+</body>
+</html>
+
+    
+</body>
+</html>
