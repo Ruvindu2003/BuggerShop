@@ -98,7 +98,7 @@ function renderOrders() {
     updateTotalPrice();
 }
 
-// Order item functionetx
+
 function Order(itemCode, itemName, discount, price) {
     const discountedPrice = price - (price * discount / 100);
     const existingOrder = orderItems.find(order => order.itemCode === itemCode);
@@ -111,14 +111,14 @@ function Order(itemCode, itemName, discount, price) {
     renderOrders();
 }
 
-// Remove item from order
+
 function removeItem(itemCode) {
     orderItems = orderItems.filter(order => order.itemCode !== itemCode);
     localStorage.setItem('orders', JSON.stringify(orderItems));
     renderOrders();
 }
 
-// Update total price
+
 function updateTotalPrice() {
     const totalPrice = orderItems.reduce((sum, order) => sum + (order.price * order.qty), 0);
     const totalPriceElement = document.getElementById("totalPrice");
@@ -130,7 +130,7 @@ function updateTotalPrice() {
 
 
 
-// Save order function
+
 function saveOrder() {
     const customerName = document.getElementById('customerName').value.trim();
 
