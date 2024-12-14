@@ -75,10 +75,10 @@ document.getElementById("menupage").innerHTML = menupage;
 
 let orderItems = JSON.parse(localStorage.getItem('orders')) || [];
 
-// Render orders on page load
+////////////////Resender order page////////////////////////////////////////////
 function renderOrders() {
     const orderSummary = document.getElementById("orderSummary");
-    if (!orderSummary) return; // Prevent errors if element doesn't exist
+    if (!orderSummary) return; 
     orderSummary.innerHTML = '';
 
     orderItems.forEach(order => {
@@ -98,7 +98,7 @@ function renderOrders() {
     updateTotalPrice();
 }
 
-
+//////////////Orders///////////////////////////////////////////////////
 function Order(itemCode, itemName, discount, price) {
     const discountedPrice = price - (price * discount / 100);
     const existingOrder = orderItems.find(order => order.itemCode === itemCode);
@@ -111,14 +111,14 @@ function Order(itemCode, itemName, discount, price) {
     renderOrders();
 }
 
-
+///////////////Remove Item////////////////////////////////////
 function removeItem(itemCode) {
     orderItems = orderItems.filter(order => order.itemCode !== itemCode);
     localStorage.setItem('orders', JSON.stringify(orderItems));
     renderOrders();
 }
 
-
+/////////////////update Items////////////////////////////////////////////
 function updateTotalPrice() {
     const totalPrice = orderItems.reduce((sum, order) => sum + (order.price * order.qty), 0);
     const totalPriceElement = document.getElementById("totalPrice");
